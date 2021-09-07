@@ -11,5 +11,4 @@ jobs:
         type: 'zip'
         filename: 'test-minecraft-plugin.zip'
         path: 'root'
-        directory: 'release'
         exclusions: '*.git* /*node_modules/* .editorconfig'
