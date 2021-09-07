@@ -12,3 +12,8 @@ jobs:
         filename: 'test-minecraft-plugin.zip'
         path: 'root'
         exclusions: '*.git* /*node_modules/* .editorconfig'
+    - name: Upload Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "release.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}    
