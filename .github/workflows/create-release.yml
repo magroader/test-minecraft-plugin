@@ -18,4 +18,4 @@ jobs:
       - name: Deploy Release
         uses: ncipollo/release-action@v1.8.8
         with:
-          artifact: 'test-minecraft-plugin.zip'
+          artifacts: 'test-minecraft-plugin.zip'
