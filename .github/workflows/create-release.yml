@@ -14,8 +14,9 @@ jobs:
         with:
           filename: 'test-minecraft-plugin.zip'
           path: '.'
-          directory: '..'
+          directory: '../'
+          exclusions: '*.git*'
       - name: Deploy Release
         uses: ncipollo/release-action@v1.8.8
         with:
-          artifacts: 'test-minecraft-plugin.zip'
+          artifacts: '../test-minecraft-plugin.zip'
